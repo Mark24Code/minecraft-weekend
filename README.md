@@ -42,3 +42,17 @@ If you are getting "cannot open file" errors (such as "cannot find ./res/shaders
 ##### Windows
 
 good luck 🤷‍♂️ probably try building under WSL and using an X environment to pass graphics through.
+
+
+---
+
+Fix:
+
+minecraft-weekend/lib/cglm/include/cglm/types.h   L:46 
+```
+# before
+typedef float                   vec3[3];
+
+# after
+typedef float                   vec3[4];
+```
