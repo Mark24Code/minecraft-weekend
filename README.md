@@ -46,6 +46,14 @@ good luck 🤷‍♂️ probably try building under WSL and using an X environme
 
 ---
 
+# Fix MacOS Build
+
+step1:
+
+`git clone --recurse-submodules https://github.com/jdah/minecraft-weekend.git`
+
+step2:
+
 Fix:
 
 minecraft-weekend/lib/cglm/include/cglm/types.h   L:46 
@@ -55,4 +63,10 @@ typedef float                   vec3[3];
 
 # after
 typedef float                   vec3[4];
+```
+
+step3:
+
+```
+ruby ./build.rb
 ```
