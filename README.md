@@ -50,7 +50,7 @@ good luck 🤷‍♂️ probably try building under WSL and using an X environme
 
 step1:
 
-`git clone --recurse-submodules https://github.com/jdah/minecraft-weekend.git`
+`git clone --recurse-submodules git@github.com:Mark24Code/minecraft-weekend.git`
 
 step2:
 
